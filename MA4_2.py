@@ -29,22 +29,22 @@ def main():
 		stop1 = pc()
 		time_py.append(stop1-start1)
 
-        for j in array:
+	for j in array:
 		start2 = pc()
 		g = Integer(j)
 		g.fibcpp()
 		stop2 = pc()
 		time_cpp.append(stop2-start2)
 
-        plt.plot(array, time_py, 'r_', array, time_cpp, 'b-')
+	plt.plot(array, time_py, 'r_', array, time_cpp, 'b-')
 	plt.show()
 	plt.savefig('Comparing fib 25 to 40 calculated with python and c++')
 
-        startpy = pc()
+	startpy = pc()
 	resultpy = fib_py(7)
 	print(resultpy)
 	stoppy = pc()
-	
+
 	startcpp = pc()
 	resultcpp = f.fibcpp()
 	print(resultcpp)
