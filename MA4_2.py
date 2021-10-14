@@ -23,7 +23,7 @@ def main():
 	time_py = []
 	time_cpp = []
 
-        for i in array:
+	for i in array:
 		start1 = pc()
 		fib_py(i)
 		stop1 = pc()
