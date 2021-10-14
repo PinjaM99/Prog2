@@ -19,7 +19,7 @@ def main():
 	print(f.get())
 
 
-        array = np.arange(25,40)
+	array = np.arange(25,40)
 	time_py = []
 	time_cpp = []
 
