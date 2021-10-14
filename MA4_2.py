@@ -21,6 +21,13 @@ def main():
 	print(f.get())
 	f.set(7)
 	print(f.get())
+        start = pc()
+	print(fib_py(7))
+	stop = pc()
+	print(fib_py(f'{stop-start}'))
+
+
+
 
 if __name__ == '__main__':
 	main()
