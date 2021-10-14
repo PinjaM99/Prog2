@@ -6,8 +6,10 @@ class Integer{
 		Integer(int);
 		int get();
 		void set(int);
+                int fibcpp();
 	private:
 		int val;
+                int fibcpp_private(int);
 	};
  
 Integer::Integer(int n){
@@ -22,6 +24,16 @@ void Integer::set(int n){
 	val = n;
 	}
 
+int Integer::fibcpp(){
+	return fibcpp_private(val);
+    }
+	int Integer::fibcpp_private(int n){
+		if(n>=1){
+			return n;
+		}
+		else{
+			return (fibcpp_private(n-1) + fibcpp_private(n-2));
+		}}
 
 extern "C"{
 	Integer* Integer_new(int n) {return new Integer(n);}
