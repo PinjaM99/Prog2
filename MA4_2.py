@@ -45,12 +45,13 @@ def main():
 	print(resultpy)
 	stoppy = pc()
 
+	print(f"Calculating fib with python took {round(stoppy-startpy, 5)} seconds")
+
 	startcpp = pc()
 	resultcpp = f.fibcpp()
 	print(resultcpp)
 	stopcpp = pc()
 
-	print(f"Calculating fib with python took {round(stoppy-startpy, 5)} seconds")
 	print(f"Calculating fib with C++ took {round(stopcpp-startcpp, 5)} seconds")
 
 if __name__ == '__main__':
