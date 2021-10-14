@@ -12,9 +12,6 @@ def fib_py(n):
 		return(fib_py(n-1) + fib_py(n-2))
 
 
-
-
-
 def main():
 	f = Integer(5)
 	print(f.get())
@@ -22,7 +19,7 @@ def main():
 	print(f.get())
 
 
-        array = np.arange(25, 40)
+        array = np.arange(25,40)
 	time_py = []
 	time_cpp = []
 
