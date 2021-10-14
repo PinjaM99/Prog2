@@ -2,6 +2,8 @@
 
 from integer import Integer
 from time import perf_counter as pc
+import numpy as np
+import matplotlib.pyplot as plt
 
 def fib_py(n):
 	if n <= 1:
