@@ -50,8 +50,8 @@ def main():
 	print(resultcpp)
 	stopcpp = pc()
 
-	print(f'Calculating fib with python took {round(stoppy-startpy, 5)} seconds')
-	print(f'Calculating fib with C++ took {round(stopcpp-startcpp, 5)} seconds')
+	print(f"Calculating fib with python took {round(stoppy-startpy, 5)} seconds")
+	print(f"Calculating fib with C++ took {round(stopcpp-startcpp, 5)} seconds")
 
 if __name__ == '__main__':
 	main()
