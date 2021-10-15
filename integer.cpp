@@ -27,13 +27,13 @@ void Integer::set(int n){
 int Integer::fibcpp(){
 	return fibcpp_private(val);
     }
-	int Integer::fibcpp_private(int n){
-		if(n>=1){
-			return n;
-		}
-		else{
-			return (fibcpp_private(n-1) + fibcpp_private(n-2));
-		}}
+int Integer::fibcpp_private(int n){
+	if(n<=1){
+		return n;
+	}
+	else{
+		return (fibcpp_private(n-1) + fibcpp_private(n-2));
+	}}
 
 extern "C"{
 	Integer* Integer_new(int n) {return new Integer(n);}
