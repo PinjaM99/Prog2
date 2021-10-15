@@ -36,7 +36,7 @@ def main():
 		stop2 = pc()
 		time_cpp.append(stop2-start2)
 
-	plt.plot(array, time_py, 'r_', array, time_cpp, 'b-')
+	plt.plot(array, time_py, 'r-', array, time_cpp, 'b-')
 	plt.savefig('Comparing fib 25 to 40 calculated with python and c++')
 	plt.show()
 
