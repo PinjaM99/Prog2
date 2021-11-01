@@ -15,7 +15,7 @@ def fib_py(n):
 def main():
 	f = Integer(5)
 	print(f.get())
-	f.set(47)
+	f.set(7)
 	print(f.get())
 
 
@@ -41,7 +41,7 @@ def main():
 	plt.show()
 
 	startpy = pc()
-	resultpy = fib_py(47)
+	resultpy = fib_py(7)
 	print(resultpy)
 	stoppy = pc()
 
