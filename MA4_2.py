@@ -41,7 +41,7 @@ def main():
 	plt.show()
 
 	startpy = pc()
-	resultpy = fib_py(7)
+	resultpy = fib_py(47)
 	print(resultpy)
 	stoppy = pc()
 
