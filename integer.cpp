@@ -27,7 +27,7 @@ void Integer::set(int n){
 int Integer::fibcpp(){
 	return fibcpp_private(val);
 }
-int Integer::fibcpp_private(int 47){
+int Integer::fibcpp_private(int n){
 	if(n<=1){
 		return n;
 	}
