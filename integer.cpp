@@ -11,6 +11,18 @@ class Integer{
 		int val;
                 int fibcpp_private(int);
 	};
+
+int Integer::fibcpp(){
+	return fibcpp_private(val);
+}
+int Integer::fibcpp_private(int n){
+	if(n<=1){
+		return n;
+	}
+	else {
+		return (fibcpp_private(n-1) + fibcpp_private(n-2));
+	}
+}
  
 Integer::Integer(int n){
 	val = n;
@@ -23,18 +35,6 @@ int Integer::get(){
 void Integer::set(int n){
 	val = n;
 	}
-
-int Integer::fibcpp(){
-	return fibcpp_private(val);
-}
-int Integer::fibcpp_private(int n){
-	if(n<=1){
-		return n;
-	}
-	else{
-		return (fibcpp_private(n-1) + fibcpp_private(n-2));
-	}
-}
 
 
 extern "C"{
