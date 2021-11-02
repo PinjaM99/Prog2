@@ -45,7 +45,7 @@ def main():
 	print(resultpy)
 	stoppy = pc()
 
-	print(f"Calculating fib with python took {round(stoppy-startpy, 5)} seconds")#Took approx 30 min
+	print(f"Calculating fib with python took {round(stoppy-startpy, 5)} seconds")     
 
 	startcpp = pc()
 	resultcpp = f.fibcpp()
